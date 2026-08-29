@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2b1656" />
+  <title>LAIS GANDRA DAYRELL LTDA</title>
+  <meta name="og:title" content="LAIS GANDRA DAYRELL LTDA - Suporte Técnico, Desenvolvimento e Consultoria em TI" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="LAIS GANDRA DAYRELL LTDA" />
+  <meta name="description" content="LAIS GANDRA DAYRELL LTDA - CNPJ 49.035.143/0001-28. Suporte técnico, manutenção e outros serviços em tecnologia da informação, em São Paulo/SP." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LAIS GANDRA DAYRELL LTDA",
+    "legalName": "LAIS GANDRA DAYRELL LTDA",
+    "alternateName": "LAIS GANDRA DAYRELL LTDA",
+    "taxID": "49.035.143/0001-28",
+    "vatID": "49035143000128",
+    "foundingDate": "2023-01-03",
+    "description": "Suporte técnico, manutenção e outros serviços em tecnologia da informação.",
+    "url": "https://laisgandradayrellltda.com.br",
+    "telephone": "+5515981459651",
+    "email": "contato@laisgandradayrellltda.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Paulista, 1106, Sala 01 Andar 16",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "01310-914",
+      "addressCountry": "BR"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Lais Gandra Dayrell"
+    },
+    "areaServed": "São Paulo, SP",
+    "knowsAbout": "Suporte técnico, manutenção e outros serviços em tecnologia da informação (CNAE 62.09-1-00)"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple: #2b1656;
+      --purple-dark: #190b34;
+      --ice: #f3f1fb;
+      --ink: #191625;
+      --cyan: #2fd4c9;
+      --cyan-dark: #21a89f;
+      --amber: #f2a340;
+      --white: #ffffff;
+      --text: #454158;
+      --muted: #736d85;
+      --border: #e2ddf3;
+    }
+
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+    }
+
+    body {
+      font-family: 'Avenir Next', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+    }
+
+    h1, h2, h3, .nav-brand, .logo-initial {
+      font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+      letter-spacing: -0.01em;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--amber);
+      outline-offset: 2px;
+    }
+
+    /* SKIP LINK */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--cyan);
+      color: var(--purple-dark);
+      font-weight: 700;
+      padding: 0.7rem 1.2rem;
+      z-index: 1000;
+      border-radius: 0 0 4px 0;
+      font-family: 'Avenir Next', sans-serif;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      left: 0;
+    }
+
+    /* NAV */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--purple-dark);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 64px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      border-bottom: 3px solid var(--cyan);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    .nav-brand .logo-initial {
+      background: var(--cyan);
+      color: var(--purple-dark);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      list-style: none;
+      font-family: 'Avenir Next', sans-serif;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.78);
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--cyan); }
+    .nav-links .btn-nav {
+      background: var(--amber);
+      color: var(--purple-dark);
+      padding: 0.4rem 1rem;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .nav-links .btn-nav:hover { background: #d88f30; }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 4px;
+      width: 40px;
+      height: 40px;
+      color: var(--white);
+      font-size: 1.2rem;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* HERO */
+    #home {
+      background:
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 2px, transparent 2px, transparent 22px),
+        linear-gradient(160deg, var(--purple-dark) 0%, var(--purple) 100%);
+      color: var(--white);
+      padding: 5.5rem 2rem 4.5rem;
+      text-align: center;
+      position: relative;
+    }
+    #home .eyebrow {
+      font-family: 'Avenir Next', sans-serif;
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--purple-dark);
+      background: var(--cyan);
+      padding: 0.35rem 0.9rem;
+      border-radius: 4px;
+      margin-bottom: 1.3rem;
+    }
+    #home h1 {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.2rem;
+      line-height: 1.25;
+    }
+    #home p {
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      font-size: 1.05rem;
+      font-family: 'Avenir Next', sans-serif;
+      color: rgba(255,255,255,0.8);
+    }
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-family: 'Avenir Next', sans-serif;
+    }
+    .btn-primary {
+      background: var(--cyan);
+      color: var(--purple-dark);
+      padding: 0.75rem 1.6rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+      letter-spacing: 0.02em;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--cyan-dark); color: var(--white); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.5);
+      padding: 0.75rem 1.6rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+    /* SECTIONS */
+    section { padding: 4.5rem 2rem; }
+    .container { max-width: 920px; margin: 0 auto; }
+    .section-label {
+      font-family: 'Avenir Next', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cyan-dark);
+      margin-bottom: 0.6rem;
+    }
+    h2 {
+      font-size: clamp(1.4rem, 3vw, 1.95rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1.3rem;
+      line-height: 1.3;
+    }
+    section p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+      font-family: 'Avenir Next', sans-serif;
+    }
+    section p:last-child { margin-bottom: 0; }
+
+    /* SOBRE */
+    #sobre { background: var(--ice); }
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+      margin-top: 2rem;
+    }
+    @media (max-width: 640px) { .sobre-grid { grid-template-columns: 1fr; } }
+    .sobre-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--purple);
+      border-radius: 4px;
+      padding: 1.6rem;
+    }
+    .sobre-box h3 {
+      font-family: 'Avenir Next', sans-serif;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--cyan-dark);
+      margin-bottom: 0.7rem;
+      font-weight: 800;
+    }
+    .sobre-box p { font-size: 0.95rem; }
+
+    /* SERVIÇOS / ATIVIDADES */
+    #servicos { background: var(--white); }
+    .services-list {
+      list-style: none;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      font-family: 'Avenir Next', sans-serif;
+    }
+    .services-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+      background: var(--ice);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1rem 1.2rem;
+      font-size: 0.94rem;
+      color: var(--text);
+    }
+    .services-list .tag {
+      flex-shrink: 0;
+      background: var(--ink);
+      color: var(--cyan);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      margin-top: 1px;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+    .services-list .tag.principal { background: var(--cyan); color: var(--purple-dark); }
+    .services-list .tag.secundaria { background: var(--amber); color: var(--purple-dark); }
+
+    /* DADOS */
+    #dados { background: var(--ice); }
+    .dados-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      background: var(--white);
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      font-family: 'Avenir Next', sans-serif;
+    }
+    .dados-table tr { border-bottom: 1px solid var(--border); }
+    .dados-table tr:last-child { border-bottom: none; }
+    .dados-table th,
+    .dados-table td {
+      padding: 0.85rem 1.15rem;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+    .dados-table th {
+      font-weight: 800;
+      color: var(--ink);
+      width: 38%;
+      background: #e6e1f5;
+    }
+    .dados-table td { color: var(--text); }
+    .dados-table a { color: var(--purple); text-decoration: none; }
+    .dados-table a:hover { text-decoration: underline; }
+    .badge-ativa {
+      display: inline-block;
+      background: var(--cyan);
+      color: #191625;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 0.15rem 0.6rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    .table-scroll { overflow-x: auto; }
+
+    /* SÓCIOS */
+    #socios { background: var(--white); }
+    .socio-card {
+      margin-top: 2rem;
+      background: var(--ice);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem 1.7rem;
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+    }
+    .socio-card + .socio-card { margin-top: 1rem; }
+    .socio-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .socio-card h3 { font-size: 1.02rem; color: var(--ink); margin-bottom: 0.25rem; }
+    .socio-card p { font-size: 0.9rem; margin-bottom: 0; font-family: 'Avenir Next', sans-serif; }
+
+    /* MISSÃO */
+    #missao { background: var(--ink); color: var(--white); }
+    #missao h2 { color: var(--white); }
+    #missao p { color: rgba(255,255,255,0.75); }
+    .missao-highlight {
+      margin-top: 2rem;
+      background: rgba(255,255,255,0.06);
+      border-left: 4px solid var(--cyan);
+      border-radius: 4px;
+      padding: 1.3rem 1.5rem;
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.9);
+      font-family: 'Avenir Next', sans-serif;
+    }
+
+    /* CONTATO */
+    #contato-section { background: var(--ice); }
+    .contato-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 800px) { .contato-grid { grid-template-columns: 1fr; } }
+    .contato-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem;
+    }
+    .contato-card h3 { font-size: 1rem; color: var(--ink); margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem; }
+    .contato-card p { font-size: 0.93rem; font-family: 'Avenir Next', sans-serif; }
+    .contato-card a { color: var(--purple); text-decoration: none; }
+    .contato-card a:hover, .contato-card a:focus-visible { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.6);
+      padding: 2.2rem 2rem;
+      font-size: 0.8rem;
+      text-align: center;
+      line-height: 1.8;
+      font-family: 'Avenir Next', sans-serif;
+    }
+    footer strong { color: rgba(255,255,255,0.88); }
+    .footer-links {
+      margin-top: 0.9rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.6rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.8rem;
+      background: none;
+      border: none;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .footer-links a:hover, .footer-links a:focus-visible { color: rgba(255,255,255,0.85); }
+    .back-top {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--cyan);
+      color: var(--purple-dark);
+      padding: 0.35rem 0.85rem;
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    /* MODAL */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(25,22,37,0.62);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-box {
+      background: var(--white);
+      border-radius: 6px;
+      max-width: 660px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2rem;
+      position: relative;
+      font-family: 'Avenir Next', sans-serif;
+    }
+    .modal-box h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+    .modal-box h3 { font-size: 0.95rem; color: var(--purple); margin: 1.2rem 0 0.4rem; }
+    .modal-box p, .modal-box li { font-size: 0.88rem; color: var(--muted); }
+    .modal-box ul { padding-left: 1.2rem; margin-bottom: 1rem; }
+    .modal-close {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: none; border: none;
+      font-size: 1.3rem; cursor: pointer; color: var(--muted);
+      width: 36px; height: 36px;
+      border-radius: 4px;
+    }
+    .modal-close:hover { background: var(--ice); }
+
+    .stamp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 2px solid var(--cyan);
+      color: var(--white);
+      background: rgba(47,212,201,0.16);
+      border-radius: 4px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      font-family: 'Avenir Next', sans-serif;
+    }
+
+    /* MOBILE NAV */
+    @media (max-width: 720px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--purple-dark);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0.5rem 0;
+        border-bottom: 3px solid var(--cyan);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 0.9rem 1.5rem;
+      }
+      .nav-links .btn-nav { margin: 0.5rem 1.5rem; display: inline-block; width: calc(100% - 3rem); text-align: center; }
+      .nav-toggle { display: flex; }
+      .topbar { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
+
+<!-- NAV -->
+<header class="topbar">
+  <a class="nav-brand" href="#home">
+    <span class="logo-initial" aria-hidden="true">L</span>
+    LAIS GANDRA DAYRELL LTDA
+  </a>
+  <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu de navegação">
+    ☰
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Atividades</a></li>
+    <li><a href="#dados">Dados oficiais</a></li>
+    <li><a href="https://wa.me/5515981459651?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn-nav" target="_blank" rel="noopener">Contato</a></li>
+  </ul>
+</header>
+
+<main id="conteudo-principal">
+
+<!-- HERO -->
+<section id="home" aria-labelledby="hero-heading">
+  <div class="eyebrow">Tecnologia da Informação</div>
+  <h1 id="hero-heading">LAIS GANDRA DAYRELL LTDA</h1>
+  <p>Suporte técnico, manutenção e outros serviços em tecnologia da informação, com soluções para desenvolvimento, hospedagem e consultoria em TI.</p>
+  <p>Times ágeis, tecnologia atualizada e recursos para projetos web, sistemas sob encomenda e infraestrutura digital.</p>
+  <div class="hero-btns">
+    <a href="#servicos" class="btn-primary">Ver atividades</a>
+    <a href="https://wa.me/5515981459651?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn-secondary" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" aria-labelledby="sobre-heading">
+  <div class="container">
+    <div class="section-label">QUEM SOMOS?</div>
+    <h2 id="sobre-heading">Quem somos</h2>
+    <p>A empresa <strong>LAIS GANDRA DAYRELL LTDA</strong>, registrada sob o CNPJ 49.035.143/0001-28, foi fundada em 03/01/2023 na cidade de São Paulo, no estado de São Paulo.</p>
+    <p>Conforme seu cadastro público, é constituída como Sociedade Empresária Limitada, enquadrada como Micro Empresa, optante pelo Simples Nacional desde 03/01/2023. Sua atividade principal, conforme a Receita Federal, é suporte técnico, manutenção e outros serviços em tecnologia da informação. Sua situação cadastral até o momento é Ativa.</p>
+    <div class="sobre-grid">
+      <div class="sobre-box">
+        <h3>Nossa atuação</h3>
+        <p>Trabalhamos com suporte técnico e manutenção em TI, desenvolvimento e licenciamento de programas de computador, consultoria em tecnologia da informação, web design, tratamento de dados e hospedagem na internet.</p>
+      </div>
+      <div class="sobre-box">
+        <h3>Endereço cadastral</h3>
+        <p>Avenida Paulista, 1106<br>Sala 01, Andar 16<br>Bairro Bela Vista<br>São Paulo – SP, CEP 01310-914</p>
+        <p style="margin-top:0.8rem;">Em cada projeto, o compromisso é com a agilidade, a qualidade técnica e o cuidado com nossos clientes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS / ATIVIDADES -->
+<section id="servicos" aria-labelledby="servicos-heading">
+  <div class="container">
+    <div class="section-label">O QUE FAZEMOS</div>
+    <h2 id="servicos-heading">Atividades e serviços</h2>
+    <ul class="services-list">
+      <li><span class="tag principal">Principal</span> Suporte técnico, manutenção e outros serviços em tecnologia da informação (CNAE 62.09-1-00)</li>
+      <li><span class="tag secundaria">Secundária</span> Portais, provedores de conteúdo e outros serviços de informação na internet (CNAE 63.19-4-00)</li>
+      <li><span class="tag secundaria">Secundária</span> Desenvolvimento e licenciamento de programas de computador customizáveis (CNAE 62.02-3-00)</li>
+      <li><span class="tag secundaria">Secundária</span> Consultoria em tecnologia da informação (CNAE 62.04-0-00)</li>
+      <li><span class="tag secundaria">Secundária</span> Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet (CNAE 63.11-9-00)</li>
+      <li><span class="tag secundaria">Secundária</span> Desenvolvimento de programas de computador sob encomenda (CNAE 62.01-5-01)</li>
+      <li><span class="tag secundaria">Secundária</span> Web design (CNAE 62.01-5-02)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- DADOS OFICIAIS -->
+<section id="dados" aria-labelledby="dados-heading">
+  <div class="container">
+    <div class="section-label">REGISTRO PÚBLICO</div>
+    <h2 id="dados-heading">Dados oficiais — LAIS GANDRA DAYRELL LTDA</h2>
+    <div class="table-scroll">
+      <table class="dados-table">
+        <caption class="sr-only" style="position:absolute;left:-9999px;">Dados cadastrais da empresa</caption>
+        <tbody>
+          <tr><th scope="row">Razão Social</th><td>LAIS GANDRA DAYRELL LTDA</td></tr>
+          <tr><th scope="row">CNPJ</th><td>49.035.143/0001-28</td></tr>
+          <tr><th scope="row">Data de Abertura</th><td>03/01/2023 (3 anos, 7 meses e 25 dias)</td></tr>
+          <tr><th scope="row">Porte</th><td>Micro Empresa</td></tr>
+          <tr><th scope="row">Natureza Jurídica</th><td>Sociedade Empresária Limitada</td></tr>
+          <tr><th scope="row">Opção pelo MEI</th><td>Não</td></tr>
+          <tr><th scope="row">Opção pelo Simples</th><td>Sim</td></tr>
+          <tr><th scope="row">Data Opção Simples</th><td>03/01/2023</td></tr>
+          <tr><th scope="row">Capital Social</th><td>R$ 1.000,00</td></tr>
+          <tr><th scope="row">Tipo</th><td>Matriz</td></tr>
+          <tr><th scope="row">Situação Cadastral</th><td><span class="badge-ativa">ATIVA</span></td></tr>
+          <tr><th scope="row">Data da Situação</th><td>03/01/2023</td></tr>
+          <tr><th scope="row">Atividade Principal (CNAE)</th><td>62.09-1-00 — Suporte técnico, manutenção e outros serviços em tecnologia da informação</td></tr>
+          <tr><th scope="row">Atividades Secundárias (CNAE)</th><td>63.19-4-00 — Portais, provedores de conteúdo e outros serviços de informação na internet<br>62.02-3-00 — Desenvolvimento e licenciamento de programas de computador customizáveis<br>62.04-0-00 — Consultoria em tecnologia da informação<br>63.11-9-00 — Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet<br>62.01-5-01 — Desenvolvimento de programas de computador sob encomenda<br>62.01-5-02 — Web design</td></tr>
+          <tr><th scope="row">Endereço</th><td>Avenida Paulista, 1106, Sala 01 Andar 16, Bela Vista, São Paulo – SP, CEP 01310-914</td></tr>
+          <tr><th scope="row">Município</th><td>São Paulo</td></tr>
+          <tr><th scope="row">Estado</th><td>São Paulo</td></tr>
+          <tr><th scope="row">Telefone</th><td><a href="tel:+5515981459651">(15) 98145-9651</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SÓCIOS -->
+<section id="socios" aria-labelledby="socios-heading">
+  <div class="container">
+    <div class="section-label">TITULARIDADE</div>
+    <h2 id="socios-heading">Sócios e administradores</h2>
+    <div class="socio-card">
+      <div class="socio-avatar" aria-hidden="true">L</div>
+      <div>
+        <h3>Lais Gandra Dayrell</h3>
+        <p>Sócio-Administrador — Qualificação: Sócio-Administrador</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSÃO -->
+<section id="missao" aria-labelledby="missao-heading">
+  <div class="container">
+    <div class="section-label" style="color:rgba(255,255,255,0.6);">NOSSA MISSÃO</div>
+    <h2 id="missao-heading">Nossa missão</h2>
+    <p>A missão de LAIS GANDRA DAYRELL LTDA é oferecer soluções de tecnologia da informação ágeis e confiáveis, com estrutura para suporte técnico, desenvolvimento sob encomenda e consultoria, servindo clientes em São Paulo e região com responsabilidade e qualidade.</p>
+    <div class="missao-highlight">
+      Nosso compromisso é oferecer atendimento próximo e soluções tecnológicas adequadas a cada projeto, priorizando a segurança e a satisfação de nossos clientes.
+    </div>
+    <p style="margin-top:1rem; font-size:0.85rem; color:rgba(255,255,255,0.55);">LAIS GANDRA DAYRELL LTDA — CNPJ 49.035.143/0001-28</p>
+    <div class="stamp">CNPJ ativo desde 2023</div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato-section" aria-labelledby="contato-heading">
+  <div class="container">
+    <div class="section-label">FALE CONOSCO</div>
+    <h2 id="contato-heading">Contato — LAIS GANDRA DAYRELL LTDA</h2>
+    <p style="margin-bottom:1.5rem;">Entre em contato com <strong>LAIS GANDRA DAYRELL LTDA</strong> (CNPJ 49.035.143/0001-28) por qualquer um dos canais abaixo.</p>
+    <div class="contato-grid">
+      <div class="contato-card">
+        <h3><span aria-hidden="true">📞</span> Telefone</h3>
+        <p><a href="tel:+5515981459651">(15) 98145-9651</a></p>
+      </div>
+      <div class="contato-card">
+        <h3><span aria-hidden="true">💬</span> WhatsApp</h3>
+        <p><a href="https://wa.me/5515981459651?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Chamar no WhatsApp →</a></p>
+      </div>
+      <div class="contato-card">
+        <h3><span aria-hidden="true">✉️</span> E-mail</h3>
+        <p><a href="mailto:contato@laisgandradayrellltda.com.br">contato@laisgandradayrellltda.com.br</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <strong>LAIS GANDRA DAYRELL LTDA</strong><br>
+  Razão Social: LAIS GANDRA DAYRELL LTDA | CNPJ: 49.035.143/0001-28 | Data de Abertura: 03/01/2023 | Porte: Micro Empresa | Natureza Jurídica: Sociedade Empresária Limitada | Situação Cadastral: ATIVA | Tipo: MATRIZ | Capital Social: R$ 1.000,00 | Endereço: Avenida Paulista, 1106, Sala 01 Andar 16, Bela Vista, São Paulo – SP, CEP 01310-914 | E-mail: contato@laisgandradayrellltda.com.br<br><br>
+  © 2026 LAIS GANDRA DAYRELL LTDA. Todos os direitos reservados.
+  <div class="footer-links">
+    <button type="button" id="privacy-link">Política de Privacidade</button>
+    <a href="#home" class="back-top">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<!-- MODAL PRIVACIDADE -->
+<div class="modal-overlay" id="privacy-modal">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+    <button class="modal-close" id="modal-close-btn" aria-label="Fechar política de privacidade">✕</button>
+    <h2 id="privacy-title">Política de Privacidade</h2>
+    <p><strong>LAIS GANDRA DAYRELL LTDA</strong><br>
+    CNPJ: 49.035.143/0001-28<br>
+    Endereço: Avenida Paulista, 1106, Sala 01 Andar 16, Bela Vista, São Paulo – SP, CEP 01310-914</p>
+
+    <h3>1. Finalidade</h3>
+    <p>Esta Política de Privacidade descreve como LAIS GANDRA DAYRELL LTDA coleta, utiliza, armazena e protege dados pessoais de clientes, parceiros, fornecedores e usuários que interagem conosco por meio de nossos canais de comunicação ou durante a prestação de nossos serviços.</p>
+
+    <h3>2. Dados Coletados</h3>
+    <p>Coletamos apenas os dados necessários para as finalidades descritas nesta política, incluindo:</p>
+    <ul>
+      <li>Nome, e-mail, telefone e informações necessárias ao atendimento;</li>
+      <li>Registros de comunicação, projetos e histórico de suporte relacionado aos serviços prestados;</li>
+      <li>Dados de navegação (quando aplicável), conforme políticas das plataformas utilizadas.</li>
+    </ul>
+
+    <h3>3. Uso dos Dados</h3>
+    <p>Os dados pessoais coletados são utilizados para:</p>
+    <ul>
+      <li>Prestação e gestão dos serviços de tecnologia da informação realizados;</li>
+      <li>Comunicação operacional, administrativa e comercial;</li>
+      <li>Cumprimento de obrigações legais e regulatórias;</li>
+      <li>Melhoria contínua dos serviços e processos internos.</li>
+    </ul>
+
+    <h3>4. Compartilhamento de Dados</h3>
+    <p>Não comercializamos dados pessoais. O compartilhamento ocorre apenas com parceiros essenciais à execução dos serviços, mediante confidencialidade, ou quando exigido por lei, ordem judicial ou autoridade competente.</p>
+
+    <h3>5. Direitos do Titular (LGPD)</h3>
+    <p>Nos termos da LGPD (Lei nº 13.709/2018), o titular pode solicitar confirmação de tratamento, acesso, correção, anonimização, bloqueio, eliminação, portabilidade e revogação de consentimentos.</p>
+
+    <h3>6. Armazenamento e Segurança</h3>
+    <p>Adotamos medidas técnicas e administrativas adequadas para proteger os dados pessoais contra acessos não autorizados, perdas ou divulgações indevidas.</p>
+
+    <h3>7. Contato</h3>
+    <p><span aria-hidden="true">📞</span> Telefone: (15) 98145-9651<br><span aria-hidden="true">✉️</span> E-mail: contato@laisgandradayrellltda.com.br</p>
+
+    <p style="margin-top:1.2rem; font-size:0.8rem;">LAIS GANDRA DAYRELL LTDA — CNPJ 49.035.143/0001-28 — © 2026. Todos os direitos reservados.</p>
+  </div>
+</div>
+
+<script>
+  // Menu mobile
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+    navToggle.textContent = isOpen ? '✕' : '☰';
+  });
+
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.textContent = '☰';
+    });
+  });
+
+  // Modal de privacidade (com acessibilidade: foco e tecla Esc)
+  const privacyLink = document.getElementById('privacy-link');
+  const privacyModal = document.getElementById('privacy-modal');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+  let lastFocusedElement = null;
+
+  function openModal() {
+    lastFocusedElement = document.activeElement;
+    privacyModal.classList.add('active');
+    modalCloseBtn.focus();
+    document.addEventListener('keydown', handleModalKeydown);
+  }
+
+  function closeModal() {
+    privacyModal.classList.remove('active');
+    document.removeEventListener('keydown', handleModalKeydown);
+    if (lastFocusedElement) lastFocusedElement.focus();
+  }
+
+  function handleModalKeydown(e) {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  }
+
+  privacyLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal();
+  });
+  modalCloseBtn.addEventListener('click', closeModal);
+  privacyModal.addEventListener('click', (e) => {
+    if (e.target === privacyModal) closeModal();
+  });
+</script>
+
+</body>
+</html>
